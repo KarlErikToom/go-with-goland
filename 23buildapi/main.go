@@ -104,6 +104,8 @@ func createOneCourse(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode("No data inside JSON")
 		return
 	}
+	//TODO check only if title is duplicate
+	//loop, title matches with course.coursename, JSON
 
 	//generate unique id, string
 	//append course into courses
